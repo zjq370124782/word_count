@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计结果</title>
+</head>
+<style>
+    .box{
+        width:300px;
+        background-color: #ccc;
+        height: 500px;
+        overflow: auto;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 30px;
+    }
+    .h{
+        margin: 20px auto;
+        text-align: center;
+        color:blue;
+    }
+</style>
+
+<body>
+<h1 class="h">文本出现频率统计</h1>
+<div class="box">
+
+    <br>
+    {% for word,count in worddirt %}
+    {{word}} - {{count}}
+    <br>
+    {% endfor %}
+</div>
+
+</body>
+</html>
